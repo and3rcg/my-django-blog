@@ -1,0 +1,7 @@
+{% extends 'posts/index.html' %}
+{% load humanize %}
+
+{% block titulo %}{{request.GET.termo}}{% endblock titulo %}
+
+{% include 'partial/_pagination.html' %}
+
